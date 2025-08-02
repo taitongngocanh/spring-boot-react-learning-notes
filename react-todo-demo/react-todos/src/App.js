@@ -1,4 +1,4 @@
-import TodoRowItem from './components/TodoRowItem';
+import TodoTable from './components/TodoTable';
 import './App.css';
 
 function App() {
@@ -18,20 +18,7 @@ function App() {
         A simple warning alert—check it out!
       </div>
       <div>
-        <table className='table table-striped'>
-          <thead>
-            <tr>
-              <th scope='col'>#</th>
-              <th scope='col'>Description</th>
-              <th scope='col'>Assigned</th>
-            </tr>
-          </thead>
-          <tbody>
-            <TodoRowItem rowNumber={todos[0].roleNumber} rowDescription={todos[0].rowDescription} rowAssigned={todos[0].rowAssigned}/>
-            <TodoRowItem rowNumber={todos[1].roleNumber} rowDescription={todos[1].rowDescription} rowAssigned={todos[1].rowAssigned}/>
-            <TodoRowItem rowNumber={todos[2].roleNumber} rowDescription={todos[2].rowDescription} rowAssigned={todos[2].rowAssigned}/>       
-          </tbody>
-        </table>
+        <TodoTable todos={todos}/>
       </div>
     </div>
   );
