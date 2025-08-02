@@ -1,12 +1,24 @@
-import TodoTable from './components/TodoTable';
 import './App.css';
+import TodoTable from './components/TodoTable';
 
 function App() {
 
   const todos = [
-    {rowNumber: 1, rowDescription: 'Feed monkey', rowAssigned: 'Anh Tai'},
-    {rowNumber: 2, rowDescription: 'Do react', rowAssigned: 'Chi Pheo'},
-    {rowNumber: 3, rowDescription: 'Have a shower', rowAssigned: 'Thi No'}
+    {
+      rowNumber:1,
+      rowDescription: 'An com',
+      rowAssigned: 'Anh Tai'
+    },
+    {
+      rowNumber:2,
+      rowDescription: 'Di tam',
+      rowAssigned: 'Anh Tai'
+    },
+    {
+      rowNumber:3,
+      rowDescription: 'Di ngu',
+      rowAssigned: 'Anh Tai'
+    }
   ]
 
   return (
@@ -15,7 +27,7 @@ function App() {
         Your Todo's
       </div>
       <div class="alert alert-warning" role="alert">
-        A simple warning alert—check it out!
+        こんにちは、わたしはたいです。
       </div>
       <div>
         <TodoTable todos={todos}/>
