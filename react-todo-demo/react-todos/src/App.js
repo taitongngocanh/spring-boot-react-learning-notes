@@ -13,14 +13,18 @@ function App() {
   ])
 
   const addTodo = (description, assinged) => {
+    let rowNumber = 0;
     if (todos.length > 0) {
-      const newTodo = {
+      rowNumber = todos[todos.length - 1].rowNumber + 1;
+    } else {
+      rowNumber = 1;
+    }
+    const newTodo = {
         rowNumber: todos.length + 1, 
         rowDescription: description,
         rowAssigned: assinged
       }
-      setTodos(todos => [...todos, newTodo])
-    }
+    setTodos(todos => [...todos, newTodo])
   }
 
   return (
@@ -28,7 +32,7 @@ function App() {
       <div>
         Your Todo's
       </div>
-      <div class="alert alert-warning" role="alert">
+      <div className="alert alert-warning" role="alert">
         A simple warning alert—check it out!
       </div>
       <div>

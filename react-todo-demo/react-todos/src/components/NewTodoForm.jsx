@@ -38,8 +38,7 @@ function NewTodoForm(props) {
                     </div>
                     <button 
                     type='button' 
-                    className='btn btn-primary mt-3' 
-                    onClick={submitTodo}>Add new Todo</button>
+                    className='btn btn-primary mt-3' onClick={submitTodo}>Add new Todo</button>
                </form>
           </div>
      )
