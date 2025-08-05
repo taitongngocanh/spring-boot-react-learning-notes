@@ -18,7 +18,7 @@ function App() {
         rowDescription: 'New Todo',
         rowAssigned: 'User Three'
       }
-      setTodos(todos => [...todos, newTodo]);
+      setTodos(todos => [...todos, newTodo])
     }
   }
 
