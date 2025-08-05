@@ -1,9 +1,17 @@
 import React, {useState} from "react";
 
-function NewTodoForm() {
+function NewTodoForm(props) {
 
      const [description, setDescription] = useState('');
      const [assinged, setAssinged] = useState('');
+
+     const submitTodo = () => {
+          if (description !== '' && assinged !== '') {
+               props.addTodo(description, assinged);
+               setAssinged('');
+               setDescription('');
+          }
+     }
 
      return (
           <div className='mt-5'>
@@ -28,7 +36,10 @@ function NewTodoForm() {
                          >
                          </textarea>
                     </div>
-                    <button type='button' className='btn btn-primary mt-3'>Add new Todo</button>
+                    <button 
+                    type='button' 
+                    className='btn btn-primary mt-3' 
+                    onClick={submitTodo}>Add new Todo</button>
                </form>
           </div>
      )
