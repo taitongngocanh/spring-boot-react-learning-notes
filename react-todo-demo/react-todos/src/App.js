@@ -5,7 +5,7 @@ import './App.css';
 
 function App() {
 
-  const [showAddTodoForm, setShowAddTodoForm] = useState(false);
+  const [showTodoFormInput, setShowTodoFormInput] = useState(false);
 
   const [todos, setTodos] = useState([
     {rowNumber: 1, rowDescription: 'Feed monkey', rowAssigned: 'Anh Tai'},
@@ -45,14 +45,13 @@ function App() {
       <div className='card-body'>
         <div>
         <TodoTable todos={todos} deleteTodo={deleteTodo}/>
-        <button className='btn btn-primary' onClick={() => setShowAddTodoForm(!showAddTodoForm)}>
-          {showAddTodoForm ? 'Close New Todo' : 'New Todo'}
+        <button className='btn btn-primary' onClick={() => {setShowTodoFormInput(!showTodoFormInput)}}>
+          {showTodoFormInput ? 'Close New Todo' : 'New Todo'}
         </button>
-        
-        {showAddTodoForm && 
+
+        {showTodoFormInput && 
           <NewTodoForm addTodo={addTodo}/>
         }
-        
       </div>
       </div>
     </div>
