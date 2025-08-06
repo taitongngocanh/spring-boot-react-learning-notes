@@ -5,6 +5,8 @@ import './App.css';
 
 function App() {
 
+  const [showAddTodoForm, setShowAddTodoForm] = useState(false);
+
   const [todos, setTodos] = useState([
     {rowNumber: 1, rowDescription: 'Feed monkey', rowAssigned: 'Anh Tai'},
     {rowNumber: 2, rowDescription: 'Do react', rowAssigned: 'Chi Pheo'},
@@ -40,15 +42,18 @@ function App() {
       <div>
         Your Todo's
       </div>
-      <div className="alert alert-warning" role="alert">
-        A simple warning alert—check it out!
-      </div>
-      <div>
+      <div className='card-body'>
+        <div>
         <TodoTable todos={todos} deleteTodo={deleteTodo}/>
-        <button className='btn btn-primary'>
-          Add new Todo
+        <button className='btn btn-primary' onClick={() => setShowAddTodoForm(!showAddTodoForm)}>
+          {showAddTodoForm ? 'Close New Todo' : 'New Todo'}
         </button>
-        <NewTodoForm addTodo={addTodo}/>
+        
+        {showAddTodoForm && 
+          <NewTodoForm addTodo={addTodo}/>
+        }
+        
+      </div>
       </div>
     </div>
   );
