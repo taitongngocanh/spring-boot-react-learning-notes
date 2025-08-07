@@ -1,0 +1,23 @@
+We want to create the file config.json
+tsc --init
+
+{
+  "compilerOptions": {
+    "module": "nodenext",
+    "target": "es5",
+    "noEmitOnError": true,
+    "types": [],
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "strict": true,
+    "jsx": "react-jsx",
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true,
+  }
+}
