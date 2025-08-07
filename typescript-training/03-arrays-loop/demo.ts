@@ -1,12 +1,11 @@
-let sportsOne: string[] = ["Pheo", "No", "Cam", "leo"];
+let numbers: number[] = [1, 2, 3, 4];
 
-sportsOne.push("Van Lan");
-sportsOne.push("Tien Dat");
+let sum: number = 0;
 
-for (let favor of sportsOne) {
-     if (favor == "No") {
-          console.log(favor + " This is my favorite wife!");
-     } else {
-          console.log(favor);
+for (let i = 0; i < numbers.length; i++) {
+     if (numbers[i] % 2 != 0) {
+          sum += numbers[i];
      }
 }
+
+console.log("The sum of arrays is: " + sum);

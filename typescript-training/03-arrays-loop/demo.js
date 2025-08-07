@@ -1,12 +1,8 @@
-var sportsOne = ["Pheo", "No", "Cam", "leo"];
-sportsOne.push("Van Lan");
-sportsOne.push("Tien Dat");
-for (var _i = 0, sportsOne_1 = sportsOne; _i < sportsOne_1.length; _i++) {
-    var favor = sportsOne_1[_i];
-    if (favor == "No") {
-        console.log(favor + " This is my favorite wife!");
-    }
-    else {
-        console.log(favor);
+var numbers = [1, 2, 3, 4];
+var sum = 0;
+for (var i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 != 0) {
+        sum += numbers[i];
     }
 }
+console.log("The sum of arrays is: " + sum);

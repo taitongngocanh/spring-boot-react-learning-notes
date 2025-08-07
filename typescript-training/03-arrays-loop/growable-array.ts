@@ -1,7 +1,13 @@
-let sports: string[] = ["Hello", "sova"];
+let sports: string[] = ["Xin chao", "Konnichiwa", "gohan"];
 
-sports.push("Tao ka");
+sports.push("mizu");
+sports.push("sakana");
 
 for (let tem of sports) {
-     console.log(tem);
+
+     if (tem == "gohan") {
+          console.log(tem + " : this is my favorite food!");
+     } else {
+          console.log(tem.toUpperCase());
+     }
 }
