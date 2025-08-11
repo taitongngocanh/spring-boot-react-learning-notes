@@ -1,7 +1,7 @@
 import TodoRowItem from "./TodoRowItem";
-import todos from "./TodoRowItem"
+import { TodoModel } from "../models/TodoModel";
 
-function TodoTable(props) {
+function TodoTable(props: {todos: TodoModel[], deleteTodo: Function}) {
      return (
           <table className="table table-hover">
                <thead>
