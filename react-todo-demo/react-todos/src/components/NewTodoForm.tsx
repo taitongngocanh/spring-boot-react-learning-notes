@@ -1,6 +1,6 @@
-import {useState} from "react";
+import React, {useState} from "react";
 
-function NewTodoForm(props: {addTodo: Function}) {
+export const NewTodoForm: React.FC<{ addTodo: Function}> = (props) => {
 
      const [description, setDescription] = useState('');
      const [assinged, setAssinged] = useState('');
@@ -43,5 +43,3 @@ function NewTodoForm(props: {addTodo: Function}) {
           </div>
      )
 }
-
-export default NewTodoForm;

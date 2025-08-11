@@ -1,8 +1,8 @@
-import TodoTable from './components/TodoTable';
+import { TodoTable } from './components/TodoTable';
 import {useState} from 'react';
-import NewTodoForm from './components/NewTodoForm';
+import { NewTodoForm } from './components/NewTodoForm';
 
-function App() {
+export const App = () => {
 
   const [showTodoFormInput, setShowTodoFormInput] = useState(false);
 
@@ -56,5 +56,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
