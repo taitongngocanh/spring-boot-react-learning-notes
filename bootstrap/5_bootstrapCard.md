@@ -42,6 +42,6 @@
 - Card group sẽ đặt các card cùng chiều cao và xếp cạnh nhau.
 
 ## 6. Lưu ý
-- Có thể kết hợp với Grid system để responsive.
-- Có thể thêm utility classes (màu nền, text-center, shadow...) để tùy chỉnh giao diện.
-- Thêm inline style hoặc class CSS riêng để thay đổi kích thước.
+- Có thể kết hợp với **Grid system** để responsive.
+- Có thể thêm **utility classes** (màu nền, text-center, shadow...) để tùy chỉnh giao diện.
+- Thêm **inline style** hoặc class CSS riêng để thay đổi kích thước.
