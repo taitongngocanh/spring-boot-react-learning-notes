@@ -1,27 +1,33 @@
 # Bootstrap Alert
 
 ## 1. Khái niệm
-**Alert** là thành phần dùng để hiển thị thông báo hoặc cảnh báo cho người dùng. Bootstrap cung cấp nhiều kiểu màu sắc khác nhau để biểu thị các mức độ thông tin: thành công, cảnh báo, lỗi, thông tin, v.v. Alert có thể là tĩnh hoặc có thể đóng được.
+**Alert** là thành phần hiển thị thông báo, cảnh báo hoặc thông tin cho người dùng.
 
-## 2. Cấu trúc cơ bản
-<div class="alert alert-primary" role="alert">
-  Đây là một alert màu xanh dương!
+## 2. Ví dụ cơ bản
+\`\`\`html
+<div class="alert alert-primary" role="alert">A simple primary alert!</div>
+<div class="alert alert-secondary" role="alert">A simple secondary alert!</div>
+<div class="alert alert-success" role="alert">A simple success alert!</div>
+<div class="alert alert-danger" role="alert">A simple danger alert!</div>
+<div class="alert alert-warning" role="alert">A simple warning alert!</div>
+<div class="alert alert-info" role="alert">A simple info alert!</div>
+<div class="alert alert-light" role="alert">A simple light alert!</div>
+<div class="alert alert-dark" role="alert">A simple dark alert!</div>
+\`\`\`
+
+## 3. Alert có link
+\`\`\`html
+<div class="alert alert-warning" role="alert">
+  A warning with <a href="#" class="alert-link">an example link</a>.
 </div>
+\`\`\`
 
-## 3. Các class quan trọng
-- `.alert` → Khởi tạo alert.
-- `.alert-{color}` → Thay đổi màu sắc (`primary`, `secondary`, `success`, `danger`, `warning`, `info`, `light`, `dark`).
-- `.alert-dismissible` → Cho phép đóng alert.
-- `.fade` + `.show` → Thêm hiệu ứng mờ dần khi đóng.
-- `role="alert"` → Hỗ trợ trình đọc màn hình (accessibility).
-
-## 4. Ví dụ mở rộng
-<div class="alert alert-success alert-dismissible fade show" role="alert">
-  <strong>Thành công!</strong> Bạn đã thực hiện hành động thành công.
+## 4. Alert có nút đóng
+\`\`\`html
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>Holy guacamole!</strong> You should check in on some of those fields below.
   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
+\`\`\`
 
-## 5. Lưu ý
-- Alert không tự động biến mất, cần JavaScript hoặc thao tác người dùng để đóng.
-- Có thể đặt bất kỳ nội dung HTML nào bên trong alert (link, bold, v.v.).
-- Sử dụng `.mb-0` hoặc các utility class khác để điều chỉnh khoảng cách.
+---
